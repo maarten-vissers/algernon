@@ -1,0 +1,8 @@
+if method() == "POST" then
+    dofile("post.lua")
+elseif method() == "GET" then
+    dofile("get.lua")
+else
+    print("Neither GET nor PUT but " .. method())
+end
+
